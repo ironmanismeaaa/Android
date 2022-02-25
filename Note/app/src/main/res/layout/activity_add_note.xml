@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="40dp"
+        app:cardElevation="8dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="45dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="35dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:id="@+id/title1"
+                    style="@style/InputStyle">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etNoteTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="笔记标题"
+                        android:maxLength="20"
+                        android:background="#ffffff"
+                        android:fontFamily="@font/montserrat_medium"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    style="@style/InputStyle"
+                    android:layout_marginTop="40dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etNoteDes"
+                        android:inputType="textMultiLine"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="笔记内容"
+                        android:background="#ffffff"
+                        android:fontFamily="@font/montserrat_medium"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imgnote"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:visibility="gone"
+                    android:layout_marginTop="20dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/btnlayout">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnAddImg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="添加图片"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:paddingTop="15dp"
+                        android:paddingBottom="15dp"
+                        android:paddingLeft="12dp"
+                        android:layout_weight="1"
+
+                        android:paddingRight="12dp"
+                        app:cornerRadius="30dp"
+                        android:layout_gravity="center"/>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnAdd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="添加笔记"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="5dp"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:paddingTop="15dp"
+                        android:paddingBottom="15dp"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        app:cornerRadius="30dp"
+
+                        android:layout_gravity="center"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</LinearLayout>

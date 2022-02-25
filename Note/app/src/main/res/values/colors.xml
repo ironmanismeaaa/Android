@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#272626</color>
+    <color name="colorPrimaryDark">#000</color>
+    <color name="colorAccent">#E4D1B3</color>
+    <color name="white">#FFFF</color>
+    <color name="colorWhite">#FFFFFF</color>
+
+
+    <color name="red">#E57373</color>
+    <color name="blue">#64B5F6</color>
+    <color name="indigo">#5C6BC0</color>
+    <color name="purple">#BA68C8</color>
+    <color name="pink">#F06292</color>
+    <color name="green">#81C784</color>
+    <color name="yellow">#FFF176</color>
+    <color name="orange">#FFB74D</color>
+    <color name="brown">#A1887F</color>
+    <color name="teal">#26A69A</color>
+
+    <color name="zhishu">#ef5b9c</color>
+    <color name="qiangwei">#f05b72</color>
+    <color name="zhuse">#f26522</color>
+    <color name="jinchi">#f15a22</color>
+    <color name="huangcha">#de773f</color>
+
+    <color name="tea">#8f4b2e</color>
+    <color name="ganzi">#faa755</color>
+    <color name="xingse">#fab27b</color>
+    <color name="xuancao">#c88400</color>
+    <color name="xiuye">#896a45</color>
+    <color name="yama">#b69968</color>
+
+    <color name="qingdan">#80752c</color>
+    <color name="mocha">#b7ba6b</color>
+    <color name="songye">#74905d</color>
+    <color name="qiancong">#00a6ac</color>
+    <color name="lanshu">#5e7c85</color>
+    <color name="qing">#009ad6</color>
+    <color name="bopiao">#2570a1</color>
+
+    <color name="hua">#2b4490</color>
+    <color name="putao">#472d56</color>
+    <color name="shizhu">#d1c7b7</color>
+    <color name="qianse">#72777b</color>
+    <color name="unknown">#2f271d</color>
+    <color name="heicha">#563624</color>
+
+
+    <integer-array name="cardColors">
+        <item>@color/blue</item>
+        <item>@color/green</item>
+        <item>@color/yellow</item>
+        <item>@color/red</item>
+        <item>@color/purple</item>
+        <item>@color/orange</item>
+        <item>@color/pink</item>
+        <item>@color/teal</item>
+        <item>@color/indigo</item>
+        <item>@color/brown</item>
+
+        <item>@color/qiangwei</item>
+        <item>@color/zhishu</item>
+        <item>@color/zhuse</item>
+        <item>@color/jinchi</item>
+        <item>@color/huangcha</item>
+
+        <item>@color/tea</item>
+        <item>@color/ganzi</item>
+        <item>@color/xingse</item>
+        <item>@color/xuancao</item>
+        <item>@color/xiuye</item>
+        <item>@color/yama</item>
+
+        <item>@color/qingdan</item>
+        <item>@color/mocha</item>
+        <item>@color/songye</item>
+        <item>@color/qiancong</item>
+        <item>@color/lanshu</item>
+        <item>@color/qing</item>
+        <item>@color/bopiao</item>
+
+        <item>@color/hua</item>
+        <item>@color/putao</item>
+        <item>@color/shizhu</item>
+        <item>@color/unknown</item>
+        <item>@color/qianse</item>
+        <item>@color/heicha</item>
+
+    </integer-array>
+</resources>

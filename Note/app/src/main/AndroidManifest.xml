@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.note">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/sun_ic_foreground"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/sun_ic_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <service
+            android:name=".utils.MyService"
+            android:enabled="true"
+            android:exported="true"></service>
+
+        <activity
+            android:name=".ui.EditNote"
+            android:launchMode="singleTask"
+            android:theme="@style/AppThemeNoActionBar" />
+        <activity
+            android:name=".ui.OpenNote"
+            android:launchMode="singleTask"
+            android:theme="@style/AppThemeNoActionBar" />
+        <activity
+            android:name=".ui.AddNote"
+            android:launchMode="singleTask"
+            android:theme="@style/AppThemeNoActionBar" />
+        <activity
+            android:name=".ui.MainActivity"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".ui.MyBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="add successfully" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.note.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>
